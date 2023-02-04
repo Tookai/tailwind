@@ -15,12 +15,13 @@ const config = {
     defaultLocale: "en",
   },
   images: {
+    domains: ["picsum.photos"],
     remotePatterns: [
       {
         protocol: "https",
         hostname: "picsum.photos",
         port: "",
-        pathname: "/**/**?random=*",
+        pathname: "/**/**?random=**",
       },
     ],
   },

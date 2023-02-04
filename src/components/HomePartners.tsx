@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { FunctionComponent, useEffect, useState } from "react";
 import Figure from "./Figure";
 
@@ -32,6 +33,15 @@ const HomePartners: FunctionComponent<IProps> = ({}) => {
   return (
     <>
       <p className="py-12 text-white">row : {visibleRow}</p>
+      <Link
+        href={
+          "https://github.com/Tookai/tailwind/blob/master/src/components/HomePartners.tsx"
+        }
+        target="_blank"
+        className="py-12 text-white hover:underline"
+      >
+        link to code
+      </Link>
 
       <div
         className={`relative flex h-[180px] w-full flex-col justify-center overflow-hidden`}
